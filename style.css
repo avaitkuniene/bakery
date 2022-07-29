@@ -1,0 +1,101 @@
+/* font-family: 'Water Brush', cursive; */
+/* font-family: 'Alegreya', serif; */
+/* font-family: 'Roboto Mono', monospace; */
+
+
+.pirmas {
+    background-image: url(pictures/pirmas.jpg);
+    height: 100vh;
+    margin-bottom: 5px;
+    /* display: grid;
+    grid-template-columns: 0.8fr 2fr 0.8fr;
+    grid-template-rows: 80px 300px 100px 100px 100px ; */
+}
+.antras {
+    background-image: url(pictures/img_texture.jpg);
+    height: 80vh;
+}
+.trecias {
+    background-image: url(pictures/img.png);
+    height: 80vh;
+}
+.ketvirtas {
+    background-image: url(pictures/img\ \(1\).jpg);
+    height: 80vh;
+}
+.pirmas header {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 0.8fr;
+    background-color: rgb(93, 88, 88);
+    opacity: 0.5;
+    color: white;
+    grid-template-rows: 80px;
+    align-items: center;
+}
+header div:first-child {
+    justify-self: right;
+}
+header div:nth-child(2) {
+    justify-self: center;
+}
+header div:nth-child(2)>a {
+    text-decoration: none;
+    font-family: 'Alegreya', serif;
+    color: white;
+}
+.fa {
+    padding: 0 15px 0 15px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 1.5fr;
+    grid-template-rows: 300px 100px 100px 150px;
+}
+main div:first-child {
+    font-family: 'Alegreya', serif;
+    grid-column-start: 2;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+}
+main div:nth-child(2) {
+    font-family: 'Alegreya', serif;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    align-self: center;
+}
+main div:nth-child(3) {
+    font-family: 'Roboto Mono', monospace;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    align-self: center;
+}
+main div:nth-child(4) {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    justify-self: center;
+    align-self: center;
+}
+button {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(93, 88, 88);
+    opacity: 0.5;
+    color: white;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    border: 2px dashed white;
+    cursor: pointer;
+}
