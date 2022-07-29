@@ -7,9 +7,6 @@
     background-image: url(pictures/pirmas.jpg);
     height: 100vh;
     margin-bottom: 5px;
-    /* display: grid;
-    grid-template-columns: 0.8fr 2fr 0.8fr;
-    grid-template-rows: 80px 300px 100px 100px 100px ; */
 }
 .antras {
     background-image: url(pictures/img_texture.jpg);
@@ -29,7 +26,7 @@
     background-color: rgb(93, 88, 88);
     opacity: 0.5;
     color: white;
-    grid-template-rows: 80px;
+    grid-template-rows: 70px;
     align-items: center;
 }
 header div:first-child {
@@ -52,12 +49,11 @@ header div:nth-child(2)>a {
 }
 main {
     display: grid;
-    grid-template-columns: 1.5fr 4fr 1.5fr;
-    grid-template-rows: 300px 100px 100px 150px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 100px 100px 100px;
 }
 main div:first-child {
     font-family: 'Alegreya', serif;
-    grid-column-start: 2;
     font-size: 100px;
     font-weight: bold;
     color: white;
@@ -66,7 +62,6 @@ main div:first-child {
 }
 main div:nth-child(2) {
     font-family: 'Alegreya', serif;
-    grid-column-start: 2;
     grid-row-start: 2;
     color: white;
     text-align: center;
@@ -75,7 +70,6 @@ main div:nth-child(2) {
 }
 main div:nth-child(3) {
     font-family: 'Roboto Mono', monospace;
-    grid-column-start: 2;
     grid-row-start: 3;
     color: white;
     text-align: center;
@@ -83,7 +77,6 @@ main div:nth-child(3) {
     align-self: center;
 }
 main div:nth-child(4) {
-    grid-column-start: 2;
     grid-row-start: 4;
     justify-self: center;
     align-self: center;
@@ -98,4 +91,15 @@ button {
     font-size: 20px;
     border: 2px dashed white;
     cursor: pointer;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+}
+footer img {
+    height: 100px;
+    width: 150px;
 }
