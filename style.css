@@ -26,6 +26,8 @@ body {
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 #ketvirtas {
     background-image: url(pictures/img\ \(1\).jpg);
@@ -107,14 +109,14 @@ body {
     border: 2px dashed white;
     cursor: pointer;
 }
-#pirmas footer {
+#pirmas .apacia {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     height: 50px;
 }
-#pirmas footer img {
+#pirmas .apacia img {
     height: 100px;
     width: 100px;
 }
@@ -126,11 +128,11 @@ body {
     margin-bottom: 5%;
     text-align: center;
 }
-.art-of-cakes .upper {
+.upper {
     font-family: 'Alegreya', serif;
     font-size: 50px;
 }
-.art-of-cakes .lower {
+.lower {
     font-family: 'Roboto Mono', monospace;
     font-size: 13px;
     color: brown;
@@ -163,7 +165,7 @@ body {
     border-bottom: 2px solid black; 
     border-top: 2px solid black; 
     align-self: center; 
-    justify-self: right;"
+    justify-self: right;
 }
 .benito div:nth-child(3) {
     font-family: 'Alegreya', serif; 
@@ -171,7 +173,7 @@ body {
     border-bottom: 2px solid black; 
     border-top: 2px solid black; 
     align-self: center; 
-    justify-self: left;"
+    justify-self: left;
 }
 .unique {
     font-family: 'Water Brush', cursive;
@@ -182,14 +184,125 @@ body {
 }
 .desine {
     display: grid;
-    margin-top: 15%;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 40% 40%;
-    column-gap: 5%;
-    row-gap: 5%;
+    margin: 10%;
+    grid-template-columns: 46% 46%;
+    grid-template-rows: 46% 46%;
+    column-gap: 8%;
+    row-gap: 8%;
+    position: relative;
 }
 #antras div>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.vidurys, .vidurys1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 40%;
+    width: 40%;
+    margin: auto;
+}
+.vidurys1 {
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: brown;
+    opacity: 0.5;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+}
+.kaire-2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10% 80% 10%;
+}
+.kaire-2>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    box-shadow: 5px 10px 30px #888888;
+}
+.desine-2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 10% 30% 25% 25% 10%;
+}
+.deze {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: white;
+    box-shadow: 5px 10px 30px #888888;
+}
+.tasty, .text, .options {
+    margin: 12%;
+}
+.text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    text-align: left;
+}
+.options {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    column-gap: 3%;
+}
+.options div>img {
+    height: 80px;
+    width: 80px;
+}
+.options div:first-child, div:nth-child(5) {
+    align-self: center;
+} 
+.left {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+  
+.left:after {
+    content: '';
+    display: inline-block;
+    margin-top: 5.5px;
+    margin-left: 6.5px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.8;
+}
+.right {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+  
+.right:after {
+    content: '';
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
