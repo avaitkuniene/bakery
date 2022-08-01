@@ -5,26 +5,35 @@
 body {
     margin: 0;
 }
-.pirmas {
+#pirmas {
     background-image: url(pictures/pirmas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     margin-bottom: 5px;
 }
-.antras {
+#antras {
     background-image: url(pictures/img_texture.jpg);
     height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
 }
-.trecias {
+#trecias {
     background-image: url(pictures/img.png);
     height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.ketvirtas {
+#ketvirtas {
     background-image: url(pictures/img\ \(1\).jpg);
     height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.pirmas header {
+#pirmas header {
     display: grid;
     grid-template-columns: 0.8fr 2fr 0.8fr;
     background-color: rgb(93, 88, 88);
@@ -33,13 +42,13 @@ body {
     grid-template-rows: 80px;
     align-items: center;
 }
-header div:first-child {
+#pirmas header div:first-child {
     justify-self: right;
 }
-header div:nth-child(2) {
+#pirmas header div:nth-child(2) {
     justify-self: center;
 }
-header div:nth-child(2)>a {
+#pirmas header div:nth-child(2)>a {
     text-decoration: none;
     font-family: 'Alegreya', serif;
     font-size: 18px;
@@ -52,13 +61,13 @@ header div:nth-child(2)>a {
     text-decoration: none;
     color: white;
 }
-main {
+#pirmas main {
     display: grid;
     height: calc(100% - 130px);
     grid-template-columns: 1fr;
     grid-template-rows: 40% 16% 16% 28%;
 }
-main div:first-child {
+#pirmas main div:first-child {
     font-family: 'Alegreya', serif;
     font-size: 100px;
     font-weight: bold;
@@ -66,7 +75,7 @@ main div:first-child {
     text-align: center;
     align-self: flex-end;
 }
-main div:nth-child(2) {
+#pirmas main div:nth-child(2) {
     font-family: 'Alegreya', serif;
     grid-row-start: 2;
     color: white;
@@ -74,7 +83,7 @@ main div:nth-child(2) {
     font-size: 50px;
     align-self: center;
 }
-main div:nth-child(3) {
+#pirmas main div:nth-child(3) {
     font-family: 'Roboto Mono', monospace;
     grid-row-start: 3;
     color: white;
@@ -82,12 +91,12 @@ main div:nth-child(3) {
     font-size: 25px;
     align-self: center;
 }
-main div:nth-child(4) {
+#pirmas main div:nth-child(4) {
     grid-row-start: 4;
     justify-self: center;
     align-self: center;
 }
-button {
+#pirmas button {
     width: 150px;
     height: 60px;
     background-color: rgb(93, 88, 88);
@@ -98,14 +107,76 @@ button {
     border: 2px dashed white;
     cursor: pointer;
 }
-footer {
+#pirmas footer {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
     height: 50px;
 }
-footer img {
+#pirmas footer img {
     height: 100px;
     width: 100px;
+}
+.kaire {
+    margin-left: 10%;
+}
+.art-of-cakes {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.art-of-cakes .upper {
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+}
+.art-of-cakes .lower {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: brown;
+}
+.lorem {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.chef-cook {
+    font-family: 'Alegreya', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.benito {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.benito div:nth-child(2) {
+    justify-self: center;
+}
+.benito div:first-child {
+    font-family: 'Alegreya', serif; 
+    font-size: 25px; 
+    border-bottom: 2px solid black; 
+    border-top: 2px solid black; 
+    align-self: center; 
+    justify-self: right;"
+}
+.benito div:nth-child(3) {
+    font-family: 'Alegreya', serif; 
+    font-size: 25px; 
+    border-bottom: 2px solid black; 
+    border-top: 2px solid black; 
+    align-self: center; 
+    justify-self: left;"
+}
+.unique {
+    font-family: 'Water Brush', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
